@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伟大的中华人民共和国万岁</title>
+    <style>
+        :root {
+            --primary-red: #9c1a2c;
+            --gold: #d4af37;
+            --ivory: #fffff0;
+            --dark-bg: #1a0000;
+        }
+
+        body {
+            font-family: "SimSun", "宋体", serif;
+            line-height: 2.2;
+            color: #333;
+            background-color: var(--ivory);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        .imperial-header {
+            background: linear-gradient(to right, var(--primary-red), #7a0a1a);
+            color: var(--gold);
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 8px solid var(--gold);
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 8px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            padding: 0 1rem;
+            flex: 1;
+            box-sizing: border-box;
+        }
+
+        .story-section {
+            width: 100%;
+            max-width: 100%;
+            margin: 2rem 0;
+            padding: 1rem;
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .story-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--primary-red);
+        }
+
+        .story-title {
+            font-size: 2rem;
+            color: var(--primary-red);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--gold);
+        }
+
+        .story-content {
+            -webkit-hyphens: auto;
+            hyphens: auto;
+            text-align: justify;
+        }
+
+        .empty-space {
+            height: 4rem;
+        }
+
+        footer {
+            background-color: var(--primary-red);
+            color: var(--gold);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 5rem;
+        }
+
+        /* 装饰元素 */
+        .decoration {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        /* 移动端样式 */
+        @media only screen and (max-width: 768px) {
+            .content-wrapper {
+                padding: 0 1rem;
+            }
+
+            .story-section {
+                padding: 1.5rem;
+            }
+
+            .story-content {
+                column-count: 1;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .story-title {
+                font-size: 1.5rem;
+            }
+        }
+        /* 自定义12栅格系统 */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .col, .col-6, .col-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            box-sizing: border-box;
+        }
+        @media (min-width: 1200px) {
+            .content-wrapper {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="imperial-header">
+        <h1>伟大的中华人民共和国万岁</h1>
+    </header>
+
+    <div class="content-wrapper">
+        <!-- 大量留白 -->
+        <div class="empty-space"></div>
+
+        <!-- 第一章节 -->
+        <section class="story-section">
+            <h2 class="story-title">中共中央 国务院印发《乡村全面振兴规划（2024—2027年）》</h2>
+            <div class="row story-content">
+              <div class="col col-12">
+                <p>来源：中国政府网</p>
+                <p>近日，中共中央、国务院印发了《乡村全面振兴规划（2024—2027年）》，并发出通知，要求各地区各部门结合实际认真贯彻落实。</p>
+                <p>《乡村全面振兴规划（2024—2027年）》主要内容如下。</p>
+                <p>实施乡村振兴战略，是以习近平同志为核心的党中央着眼党和国家事业全局作出的重大决策，是新时代新征程"三农"工作的总抓手。为有力有效推进乡村全面振兴，制定本规划。</p>
+                <p>总体要求</p>
+                <p>工作中要做到：坚持和加强党对"三农"工作的全面领导，坚持农业农村优先发展，坚持城乡融合发展，坚持农民主体地位，坚持因地制宜、分类施策，坚持人与自然和谐共生，坚持深化改革创新，坚持循序渐进、久久为功。要充分调动亿万农民的积极性、主动性、创造性，一件事情接着一件事情办，一年接着一年干，积小胜为大成。要统筹不同区域，合理确定阶段性重点任务和推进时序，尊重客观规律，不超越发展阶段，不提脱离实际的目标；统筹新型工业化、新型城镇化和乡村全面振兴，缩小城乡差别，促进城乡共同繁荣发展；统筹推进农村经济建设、政治建设、文化建设、社会建设、生态文明建设和党的建设，实现乡村全面提升。</p>
+                <p>主要目标是：到2027年，乡村全面振兴取得实质性进展，农业农村现代化迈上新台阶。国家粮食安全根基更加稳固，农业综合生产能力稳步提升，确保中国人的饭碗牢牢端在自己手中；乡村产业更加兴旺，实现乡村产业全链条升级；乡村更加生态宜居，人居环境明显改善，农村基础设施更加完备，城乡基本公共服务均等化水平不断提升；乡风文明持续提升，中华优秀传统文化充分传承发展，农民综合素质全面提高；乡村治理更加有效，乡村治理体系和治理能力现代化水平明显提升；农民生活更加美好、收入水平持续提高，农村低收入人口和欠发达地区分层分类帮扶制度基本建立。东部发达地区、中西部具备条件的大中城市郊区乡村率先基本实现农业农村现代化。到2035年，乡村全面振兴取得决定性进展，农业现代化基本实现，农村基本具备现代生活条件。</p>
+             
+              </div>
+            </div>
+        </section>
+
+        <!-- 留白 -->
+        <div class="empty-space"></div>
+
+        <!-- 第二章节 -->
+        <section class="story-section">
+            <h2 class="story-title">纪念全民族抗战爆发80周年仪式在京举行 刘云山出席并讲话</h2>
+            <div class="story-content">
+                <p>来源：国家公祭网。
+                </p>
+                <p> 7月7日，纪念全民族抗战爆发80周年仪式在中国人民抗日战争纪念馆举行。中共中央政治局常委、中央书记处书记刘云山出席仪式并讲话。这是仪式开始前，刘云山与老八路代表握手。新华社记者崔新钰摄
+
+                    新华社北京7月7日电（记者 邹伟）纪念全民族抗战爆发80周年仪式7日上午在中国人民抗日战争纪念馆举行。中共中央政治局常委、中央书记处书记刘云山出席仪式并讲话。
+
+                    北京卢沟桥畔，中国人民抗日战争纪念馆巍然矗立、雄伟庄严。上午10时，仪式开始。中国人民解放军军乐团奏响《义勇军进行曲》，全场高唱中华人民共和国国歌。随后，全场肃立，向在中国人民抗日战争中英勇牺牲的烈士默哀。各界青年代表宣誓。
+
+                    刘云山在讲话中指出，1937年7月7日，日本侵略者继1931年制造侵略我国东北的"九一八"事变之后，又蓄意制造震惊中外的卢沟桥事变，悍然发动全面侵华战争，妄图吞并全中国。在中华民族面临生死存亡的危急关头，中国共产党秉持民族大义，毅然担负起民族救亡的历史重任，发挥着中流砥柱作用。在中国共产党倡导建立的抗日民族统一战线的旗帜下，我国亿万军民同仇敌忾、共赴国难，用血肉之躯筑起钢铁长城，谱写了反抗外来侵略的壮丽史诗。以卢沟桥抗战为标志，中国开始了全民族抗战，由此开辟了世界第一个大规模反法西斯侵略的战场。
+
+                    刘云山强调，长达14年艰苦卓绝的中国人民抗日战争，是一场促进民族觉醒、民族团结的战争，是一场改变国家地位、民族命运的战争，是一场维护人类正义、世界和平的战争。伟大抗战精神是中华民族的宝贵财富，是激励中华民族自强不息、奋勇前行的不竭动力。历史和事实证明，好战者必亡，一切企图否认甚至美化侵略历史、挑战人类良知、破坏国际互信的行径，都与历史进步潮流背道而驰。我们纪念全民族抗战爆发80周年，目的就是铭记历史、缅怀先烈、珍爱和平、开创未来，维护历史事实，维护公平正义，维护世界和平，推动构建人类命运共同体。我们要紧密团结在以习近平同志为核心的党中央周围，坚定不移走中国特色社会主义道路，大力弘扬伟大抗战精神，万众一心，众志成城，不忘初心，继续前进，以优异成绩迎接党的十九大胜利召开，为实现"两个一百年"奋斗目标、实现中华民族伟大复兴的中国梦，为推进人类和平与发展事业而努力奋斗。
+
+                    仪式后，刘云山等领导同志和各界群众代表向抗战英烈献花，并参观《全民抗战　伟大壮举——纪念全民族抗战爆发80周年专题展览》。
+
+                    刘延东、许其亮、陈昌智、张庆黎出席仪式。刘奇葆主持仪式。
+
+                    在京参加过抗日战争的老战士和老同志代表、在京抗战烈士遗属代表，中央党政军群有关部门和北京市有关负责同志，各民主党派中央、全国工商联负责人和无党派人士代表，首都各界群众代表等约1000人参加仪式。
+                </p>
+                <!-- 更多段落 -->
+            </div>
+        </section>
+
+        <!-- 更多留白 -->
+        <div class="empty-space"></div>
+    </div>
+
+    <footer>
+        <p>学生为刘涌奇"三下乡"实践中宣讲设计的辅助用网站。</p>
+    </footer>
+</body>
+
+</html>
